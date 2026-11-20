@@ -1,0 +1,11 @@
+node_modules/
+trading/cache/*.json
+trading/execution/audit/
+trading/execution/orders/
+trading/execution/portfolio/portfolio_state.json
+trading/execution/portfolio/portfolio_history.jsonl
+trading/execution/portfolio/trade_ledger.jsonl
+results/
+__pycache__/
+*.pyc
+.env
