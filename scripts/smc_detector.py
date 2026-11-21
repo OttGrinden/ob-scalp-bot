@@ -460,6 +460,10 @@ def detect_sweep_reversal_4h(
                 (1 if g7 else 0)
             )
 
+            # G2 required for auto_open threshold: counter-trend (below EMA50) → cap at 8
+            if not g2 and score >= 9:
+                score = 8
+
             if score < 8:
                 continue   # below monitoring threshold — skip
 
@@ -586,6 +590,10 @@ def detect_sweep_reversal_1h(
                 (1 if g6 else 0) +
                 (1 if g7 else 0)
             )
+
+            # G2 required for auto_open threshold: counter-trend (below EMA50) → cap at 8
+            if not g2 and score >= 9:
+                score = 8
 
             if score < 7:
                 continue

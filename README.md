@@ -94,7 +94,7 @@ Virtual portfolio starts at **1000 EUR** (`INITIAL_CAPITAL` in `portfolio_state.
 Key parameters in `scalp_open.mjs`:
 | Parameter | Default | Description |
 |-----------|---------|-------------|
-| `SCALP_LEVERAGE` | 30x | Futures leverage |
+| `SCALP_LEVERAGE` | 15x | Futures leverage (Leverage-Tabelle: SL ≤3% → max 15x) |
 | `SCALP_NOTIONAL_PCT` | 3% | Margin per trade (% of NAV) |
 | `SCALP_MAX_HOLD_HOURS` | 2h | Max hold before thesis_expired close |
 | `MAX_SCALP_POSITIONS` | 2 | Max concurrent scalp slots |

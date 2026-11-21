@@ -25,7 +25,7 @@ const CACHE_DIR  = path.join(__dirname, '../../trading/cache');
 
 const MAX_SCALP_POSITIONS  = 2;
 const SCALP_NOTIONAL_PCT   = 0.03;   // 3% NAV margin per trade
-const SCALP_LEVERAGE       = 30;     // Backtest-validiert: 0% Ruin-Risiko, avg 11.932 EUR/2yr auf 5000 EUR
+const SCALP_LEVERAGE       = 15;     // Leverage-Tabelle: SL ≤3% → max 15x
 const SCALP_MAX_HOLD_HOURS = 2;
 
 // ─── CLI parsing ─────────────────────────────────────────────────────────────
